@@ -23,7 +23,7 @@ A Ruby bot for automating interactions with the Blockmesh Network, utilizing pro
   ```bash
   sudo apt update &&
   sudo apt install -y ruby ruby-dev build-essential &&
-  npm install -g pm2
+  npm install pm2 -g
   ```
 **3. Install Dependencies**
   ```bash
@@ -41,7 +41,7 @@ A Ruby bot for automating interactions with the Blockmesh Network, utilizing pro
   
 **6. Run at second time with PM2**
   ```bash
-  pm2 start ruby --name blokmes-bot -- /path/to/main.rb
+  pm2 start main.rb --interpreter ruby --name blokmes-bot
   ```
 
 # Enjoys!
