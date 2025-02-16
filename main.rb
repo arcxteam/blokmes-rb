@@ -48,21 +48,20 @@ def get_login_credentials
 end
 
 # Authenticate with proxy support
-def authenticate_with_proxy(proxy_uri)
+def authenticate_with_proxy(proxy_host, proxy_port, proxy_user, proxy_pass)
   return $api_token if $api_token
   uri = URI("https://api.blockmesh.xyz/api/get_token")
   data = { email: $email_input, password: $password_input }.to_json
   headers = { "Content-Type" => "application/json" }
 
-  # Parse proxy details
-  proxy = URI.parse(proxy_uri)
+  # Create HTTP connection with proxy
   http = Net::HTTP.new(
     uri.host,
     uri.port,
-    proxy.host,
-    proxy.port,
-    proxy.user,
-    proxy.password
+    proxy_host,
+    proxy_port,
+    proxy_user,
+    proxy_pass
   )
   http.use_ssl = true if uri.scheme == 'https'
 
@@ -78,19 +77,39 @@ def authenticate_with_proxy(proxy_uri)
   end
 end
 
+# Read proxy details from proxy.txt
+def read_proxy_from_file(file_path = "proxy.txt")
+  return nil unless File.exist?(file_path)
+  proxy_line = File.read(file_path).strip
+  # Parse the proxy line into components
+  uri_parts = proxy_line.split(":")
+  host = uri_parts[1].gsub("//", "") # Remove "//" from host
+  port = uri_parts[2]
+  username = uri_parts[3]
+  password = uri_parts[4]
+  [host, port, username, password]
+end
+
 def process_proxy_connection
   system('clear')
   coder_mark
   get_login_credentials  # Ask for login credentials
-  print "Enter your proxy (e.g., http://user:pass@host:port or socks5://host:port): "
-  proxy_uri = gets.chomp
 
-  puts "\nRunning Proxy Connection...\n\n"
+  # Read proxy details from proxy.txt
+  proxy_details = read_proxy_from_file
+  unless proxy_details
+    puts "Error: proxy.txt not found or invalid format.".red
+    return
+  end
+
+  proxy_host, proxy_port, proxy_user, proxy_pass = proxy_details
+  puts "\nUsing proxy: #{proxy_host}:#{proxy_port} (User: #{proxy_user})\n\n"
+
   loop do
-    api_token = authenticate_with_proxy(proxy_uri)
+    api_token = authenticate_with_proxy(proxy_host, proxy_port, proxy_user, proxy_pass)
     next unless api_token
     puts "[#{Time.now.strftime('%H:%M:%S')}] Authentication successful via proxy!".green
-    sleep(1)
+    sleep(2)
   end
 end
 
