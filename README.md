@@ -28,12 +28,13 @@ A Ruby bot for automating interactions with the Blockmesh Network, utilizing pro
   ```bash
   bundle install
   ```
-- Run the bot Script
+- Setting proxy (optional)
   - if you want to use proxy setup first on `nano proxy.txt`
-  - then run the script
-    ```bash
-    ruby main.rb
-    ```
+  - format proxy `http or https://host:port:user:pass`
+- Then run the script
+  ```bash
+  ruby main.rb
+  ```
  - Login To your Blockmesh Account ( Automatic saved to data.json )
 
 # Enjoys!
