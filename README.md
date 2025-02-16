@@ -1,9 +1,11 @@
+![IMG_1168](https://github.com/user-attachments/assets/01cf3f62-0213-4a0e-ad64-4b93d06c4228)
+
 # A Completed Guides Run Bl0ckm3sh Bot w/ Ruby.rb
 
 A Ruby bot for automating interactions with the Bl0ckm3sh N3twork, utilizing proxies (SOCKS5, HTTP/S) to enhance uptime and earning potential.
 
 > [!WARNING]
-> I am not responsible for any loss or damage caused by this bot. Use it at your own risk are banned.
+> I am not responsible for any loss or damage caused by this bot. Use it at your own risk are banned. There many blocked & delay BUIDL on CLI/Docker can't be connect. Dev say only extensions. So this succesfull bypas direct to run. jangan maruk
 
 ## 🦾 Bot Features
 - Direct Connection
