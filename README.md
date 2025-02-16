@@ -55,17 +55,17 @@ A Ruby bot for automating interactions with the Bl0ckm3sh N3twork, utilizing pro
 
 # Enjoys Logs!
 - For logs 
-  ```bash
-  screen -ls
-  ```
+```bash
+screen -ls
+```
 - You can see like here
-  ```diff
-  - root@jpbang:~# screen -ls
-  - There is a screen on:
-  + 169862.blokmes  (02/16/2025 11:09:35 PM)        (Detached)
-  - 1 Socket in /run/screen/S-root.
-  - root@jpbang:~#
-  ````
-  ```
-  screen -r 169862.blokmes
-  ```
+```diff
+- root@jpbang:~# screen -ls
+- There is a screen on:
++ 169862.blokmes  (02/16/2025 11:09:35 PM)        (Detached)
+- 1 Socket in /run/screen/S-root.
+- root@jpbang:~#
+````
+```
+screen -r 169862.blokmes
+```
