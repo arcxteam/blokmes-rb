@@ -109,7 +109,7 @@ def process_proxy_connection
     api_token = authenticate_with_proxy(proxy_host, proxy_port, proxy_user, proxy_pass)
     next unless api_token
     puts "[#{Time.now.strftime('%H:%M:%S')}] Authentication successful via proxy!".green
-    sleep(2)
+    sleep(21)
   end
 end
 
