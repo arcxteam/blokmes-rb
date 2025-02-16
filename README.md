@@ -12,30 +12,37 @@ A Ruby bot for automating interactions with the Blockmesh Network, utilizing pro
 
 - If you don't have a Blockmesh Network Account yet, register here [https://app.blockmesh.xyz](https://app.blockmesh.xyz/register?invite_code=8d76125c-e64f-4cd5-b711-3425585355a8)
 
-## How To Do
+## Setup Install
 
-- Cloning This Repository
+**1. Cloning This Repository**
   ```bash
   git clone https://github.com/arcxteam/blokmes-rb.git
   cd blokmes-rb
   ```
-- No have ruby yet, install this
+**2. No have `ruby and pm2` yet, need installed**
   ```bash
-  sudo apt update
-  sudo apt install ruby-dev
+  sudo apt update &&
+  sudo apt install -y ruby ruby-dev build-essential &&
+  npm install -g pm2
   ```
-- Install Dependencies
+**3. Install Dependencies**
   ```bash
   bundle install
   ```
-- Setting proxy (optional)
+**4. Setting proxy (optional)**
   - if you want to use proxy setup first on `nano proxy.txt`
   - format proxy `http or https://host:port:user:pass`
-- Then run the script
+    
+**5. Run at first time**
   ```bash
   ruby main.rb
   ```
- - Login To your Blockmesh Account ( Automatic saved to data.json )
+- So, close the logs with command `CTRL+C`
+  
+**6. Run at second time with PM2**
+  ```bash
+  pm2 start ruby --name blokmes-bot -- /path/to/main.rb
+  ```
 
 # Enjoys!
-
+- Login To your Blockmesh Account ( Automatic saved to data.json )
