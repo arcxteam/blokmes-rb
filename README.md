@@ -1,3 +1,21 @@
+# Tips & Trick Running Cloud GPU Rent by OctaSpace
+
+![photo_6271671078992153679_y](https://github.com/user-attachments/assets/5d79fd75-e105-453d-b5aa-aab34f8ac25b)
+
+
+> [!NOTE]
+> **This Guides if you running cloud GPU rent on OctaSpace, every deploy configure the prices is depending as OCTA price check here for realtime price https://www.coingecko.com/en/coins/octaspace**
+
+<script src="https://widgets.coingecko.com/gecko-coin-converter-widget.js"></script>
+<gecko-coin-converter-widget 
+  locale="en" 
+  outlined="true" 
+  coin-id="octaspace" 
+  initial-currency="usd" 
+  width="200">
+</gecko-coin-converter-widget>
+
+
 For Tips & Trick with rent [https://octa.space](https://octa.space/?ref=rTXHXwn7D96)
 
 
