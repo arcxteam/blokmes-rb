@@ -6,9 +6,10 @@
 > [!NOTE]
 > **This Guides if you running cloud GPU rent on OctaSpace, every deploy configure the prices is depending as OCTA price check here for realtime price https://www.coingecko.com/en/coins/octaspace**
 
-[Lihat Widget Konverter Kripto](https://arcxteam.github.io/octa-rental-gpu/)
+[Convert Price OCTA<>USD by Coingecko](https://arcxteam.github.io/octa-rental-gpu/)
 
-Harga Octaspace: ${{ steps.price.outputs.price }} USD
+
+
 
 For Tips & Trick with rent [https://octa.space](https://octa.space/?ref=rTXHXwn7D96)
 
