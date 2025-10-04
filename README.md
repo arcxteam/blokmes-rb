@@ -1,71 +1,25 @@
-![IMG_1168](https://github.com/user-attachments/assets/01cf3f62-0213-4a0e-ad64-4b93d06c4228)
+For Tips & Trick with rent [https://octa.space](https://octa.space/?ref=rTXHXwn7D96)
 
-# A Completed Guides Run Bl0ckm3sh Bot w/ Ruby.rb
 
-A Ruby bot for automating interactions with the Bl0ckm3sh N3twork, utilizing proxies (SOCKS5, HTTP/S) to enhance uptime and earning potential.
-
-> [!WARNING]
-> I am not responsible for any loss or damage caused by this bot. Use it at your own risk are banned. There many blocked & delay BUIDL on CLI/Docker can't be connect. Dev say only extensions. So this succesfull bypas direct to run. jangan maruk
-
-## 🦾 Bot Features
-- Direct Connection
-- Connection by Proxy (support socks/5 http/s)
-
-## Register
-
-- If you don't have a Blockmesh Network Account yet, register here [https://app.blockmesh.xyz](https://app.blockmesh.xyz/register?invite_code=8d76125c-e64f-4cd5-b711-3425585355a8)
-- Proxies Accounts (residentials) I appreciate you
-- [2captcha.com](https://2captcha.com/?from=24919769) ![rating](https://img.shields.io/badge/rating_good-★★★★★-brightgreen)
-- [app.proxies.fo](https://app.proxies.fo/ref/55adc8e5-8ae3-6bf2-03ba-c23e086fcae3) ![rating](https://img.shields.io/badge/rating_good-★★★★★-brightgreen)
-- [bartproxies.com](https://bartproxies.com/login?referral=wKXo8Uar) ![rating](https://img.shields.io/badge/rating_good-★★★★★-brightgreen)
-- [seamlessproxies.com](https://www.seamlessproxies.com/dashboard/shop) ![rating](https://img.shields.io/badge/rating_good-★★★★☆-brightgreen)
+<img width="1284" height="764" alt="image" src="https://github.com/user-attachments/assets/02ce1b02-cc88-438c-bbf0-c320ae248d5b" />
 
 ---
 
-## Setup Install
+<img width="1284" height="938" alt="IMG_3276" src="https://github.com/user-attachments/assets/56d90f07-bfff-4139-bc44-02f81e20d078" />
 
-**1. Cloning This Repository**
-  ```bash
-  git clone https://github.com/arcxteam/blokmes-rb.git
-  cd blokmes-rb
-  ```
-**2. No have `ruby and screen` yet, need installed**
-  ```bash
-  sudo apt update &&
-  sudo apt install -y ruby ruby-dev build-essential &&
-  sudo apt install screen
-  ```
-**3. Install Dependencies**
-  ```bash
-  bundle install
-  ```
-**4. Setting proxy (optional)**
-  - if you want to use proxy setup first on `nano proxy.txt`
-  - format proxy `http or https://host:port:user:pass`
-    
-**5. Create screen at first time**
-  ```bash
-  screen -S blokmes
-  ```
-**6. Run at second time with screen**
-  ```bash
-  ruby main.rb
-  ```
-- So, For close the logs with command `CTRL+A+D`
+---
 
-# Enjoys Logs!
-- For logs 
-```bash
-screen -ls
-```
-- You can see like here
-```diff
-- root@jpbang:~# screen -ls
-- There is a screen on:
-+ 169862.blokmes  (02/16/2025 11:09:35 PM)        (Detached)
-- 1 Socket in /run/screen/S-root.
-- root@jpbang:~#
-````
-```
-screen -r 169862.blokmes
-```
+<img width="1284" height="1058" alt="IMG_3287" src="https://github.com/user-attachments/assets/e1935ce2-fe17-493b-82ec-e390b2c2450e" />
+
+---
+
+<img width="1283" height="1933" alt="IMG_3281" src="https://github.com/user-attachments/assets/447358bd-044e-47a7-85f9-3b28dc0e5beb" />
+
+---
+
+<img width="1284" height="2778" alt="IMG_3284" src="https://github.com/user-attachments/assets/22f71225-dc13-4271-8dc8-892616795c51" />
+
+---
+
+<img width="1284" height="1684" alt="IMG_3279" src="https://github.com/user-attachments/assets/6ff56805-4588-4ec6-8efc-ff222b6465fd" />
+
